@@ -33,7 +33,19 @@ public class RetroClient {
     public static ApiService getBerita() {
         return getClient().create(ApiService.class);
     }
+    public static ApiService updateBerita() {
+        return getClient().create(ApiService.class);
+    }
+
+    public static ApiService deleteBerita() {
+        return getClient().create(ApiService.class);
+    }
+
     public static ApiService postBerita() {
+        return getClient().create(ApiService.class);
+    }
+
+    public static ApiService getBeritaFromID() {
         return getClient().create(ApiService.class);
     }
 }

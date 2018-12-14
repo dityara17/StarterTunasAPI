@@ -9,6 +9,11 @@ public class BeritaModel {
     @SerializedName("success")
     @Expose
     private Boolean success;
+
+
+    @SerializedName("id")
+    @Expose
+    private Integer id;
     @SerializedName("name")
     @Expose
     private String name;
@@ -21,6 +26,14 @@ public class BeritaModel {
     @SerializedName("author")
     @Expose
     private String author;
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
 
     public Boolean getSuccess() {
         return success;

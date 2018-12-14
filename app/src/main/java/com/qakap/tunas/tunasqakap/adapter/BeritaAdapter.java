@@ -1,6 +1,7 @@
 package com.qakap.tunas.tunasqakap.adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -9,6 +10,8 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.qakap.tunas.tunasqakap.R;
+import com.qakap.tunas.tunasqakap.activity.DetailActivity;
+import com.qakap.tunas.tunasqakap.activity.MainActivity;
 import com.qakap.tunas.tunasqakap.model.BeritaModel;
 
 import java.util.ArrayList;
@@ -16,6 +19,8 @@ import java.util.List;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+
+import static com.qakap.tunas.tunasqakap.Config.EXTRA_ID;
 
 public class BeritaAdapter extends RecyclerView.Adapter<BeritaAdapter.MyViewHolder> {
 
@@ -40,6 +45,12 @@ public class BeritaAdapter extends RecyclerView.Adapter<BeritaAdapter.MyViewHold
     public void onBindViewHolder(@NonNull MyViewHolder myViewHolder, int i) {
         myViewHolder.nama_berita.setText(beritaModels.get(i).getName());
         myViewHolder.author.setText(beritaModels.get(i).getAuthor());
+
+        myViewHolder.itemView.setOnClickListener(v -> {
+            Intent intent = new Intent(v.getContext(), DetailActivity.class);
+            intent.putExtra(EXTRA_ID, beritaModels.get(i).getId().toString());
+            myViewHolder.itemView.getContext().startActivity(intent);
+        });
     }
 
     @Override

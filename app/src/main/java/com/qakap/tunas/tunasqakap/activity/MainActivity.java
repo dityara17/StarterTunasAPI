@@ -28,6 +28,8 @@ public class MainActivity extends AppCompatActivity {
     RecyclerView rec_news;
     @BindView(R.id.addberita)
     Button addberita;
+    @BindView(R.id.refresh)
+    Button refresh;
     ArrayList<BeritaModel> beritaModelArrayList;
     BeritaAdapter beritaAdapter;
 
@@ -41,6 +43,10 @@ public class MainActivity extends AppCompatActivity {
             Intent intent = new Intent(MainActivity.this, AddBerita.class);
             startActivity(intent);
 
+        });
+
+        refresh.setOnClickListener(v -> {
+            getBerita();
         });
 
         getBerita();

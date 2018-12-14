@@ -16,6 +16,7 @@
 
 
     <TextView
+        android:id="@+id/nama_berita"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
@@ -23,18 +24,59 @@
         android:textSize="20sp" />
 
     <TextView
+        android:id="@+id/author"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="14dp"
-        android:text="@string/nama_berita"
+        android:text="@string/author"
         android:textSize="14sp" />
 
     <TextView
+        android:id="@+id/detail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="14dp"
         android:text="@string/detail_berita"
         android:textSize="14sp" />
+
+    <LinearLayout
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:background="@color/colorAccent"
+        android:layout_height="1dp" />
+
+    <TextView
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/edit_berita"/>
+
+    <EditText
+        android:id="@+id/title_berita"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="@string/input_title_berita" />
+
+    <EditText
+        android:id="@+id/isi_berita"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:inputType="textMultiLine"
+        android:hint="@string/input_isi_berita" />
+
+    <EditText
+        android:id="@+id/author_berita"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/input_author" />
+
+
+    <Button
+        android:id="@+id/save_berita"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/edit_berita"/>
 
 
 </LinearLayout>

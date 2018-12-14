@@ -9,4 +9,6 @@
     <string name="detail_berita">Detail Berita</string>
     <string name="author">Author</string>
     <string name="add_berita">Add Berita</string>
+    <string name="refresh">Refresh</string>
+    <string name="edit_berita">Edit Berita</string>
 </resources>
