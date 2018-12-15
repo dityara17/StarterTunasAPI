@@ -9,8 +9,6 @@ public class BeritaModel {
     @SerializedName("success")
     @Expose
     private Boolean success;
-
-
     @SerializedName("id")
     @Expose
     private Integer id;

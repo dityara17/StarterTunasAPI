@@ -11,7 +11,6 @@ import android.widget.TextView;
 
 import com.qakap.tunas.tunasqakap.R;
 import com.qakap.tunas.tunasqakap.activity.DetailActivity;
-import com.qakap.tunas.tunasqakap.activity.MainActivity;
 import com.qakap.tunas.tunasqakap.model.BeritaModel;
 
 import java.util.ArrayList;
